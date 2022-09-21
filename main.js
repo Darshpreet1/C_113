@@ -41,7 +41,7 @@ function gotResult(error , result)
   else{
     console.log(result);
     document.getElementById("result_object_name").innerHTML = result[0].label;
-    document.getElementById("result_object_accuracy").innerHTML = result[0].confidence; 
+    document.getElementById("result_object_accuracy").innerHTML = result[0].confidence.toFixed(3); 
   }
 }
 
